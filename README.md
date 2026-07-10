@@ -2,7 +2,7 @@
 
 A lightweight, highly responsive, and accessible Kanban board built with React, TypeScript, and Vite. This project serves as a showcase for building performant user interfaces without relying on bloated external dependencies for state management, drag-and-drop, or heavy UI component libraries.
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 To get the Sprint Board up and running on your local machine, follow these steps:
 
@@ -27,7 +27,7 @@ To get the Sprint Board up and running on your local machine, follow these steps
 
 ---
 
-## 🏗️ Technical Decisions & Rationale
+## Technical Decisions & Rationale
 
 During the development of this application, several deliberate architectural choices were made to prioritize performance, maintainability, and clean code:
 
@@ -45,7 +45,7 @@ When fetching initial seed data from the JSONPlaceholder API, the mapping functi
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 Because this project was scoped to be built rapidly and strictly without external libraries, there are several features knowingly left out that would be prioritized given more time:
 
