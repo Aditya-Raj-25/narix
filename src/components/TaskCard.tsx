@@ -51,7 +51,7 @@ export const TaskCard: React.FC<TaskCardProps> = ({ task, onEdit, onDelete, onMo
     <div className={styles.card}>
       <div className={styles.header}>
         <span className={`${styles.priority} ${styles[task.priority]}`}>
-          {task.priority === 'inProgress' ? 'IN PROGRESS' : task.priority.toUpperCase()}
+          {task.priority.toUpperCase()}
         </span>
         
         <div className={styles.menuContainer} ref={menuRef}>
