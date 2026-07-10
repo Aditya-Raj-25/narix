@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Brand */
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-primary-light: #e0e7ff;
+  
+  /* Backgrounds */
+  --bg-app: #f8f9fc;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f3f4f6;
+  
+  /* Text */
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  
+  /* Borders */
+  --border-light: #e5e7eb;
+  
+  /* Priority Badges */
+  --priority-high-bg: #fee2e2;
+  --priority-high-text: #b91c1c;
+  --priority-medium-bg: #fef3c7;
+  --priority-medium-text: #b45309;
+  --priority-low-bg: #d1fae5;
+  --priority-low-text: #047857;
+
+  /* Layout */
+  --sidebar-width: 240px;
+  --header-height: 72px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  overflow: hidden; /* Prevent full page scroll, handle scroll in main area */
+}
