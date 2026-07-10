@@ -27,6 +27,25 @@ To get the Sprint Board up and running on your local machine, follow these steps
 
 ---
 
+## Architecture
+
+The application follows a strict top-down data flow. The `Board` component acts as the single source of truth for the task data, automatically computing derived states for filtering and searching.
+
+```mermaid
+graph TD
+    AppShell[AppShell] --> Board[Board]
+    
+    Board -->|Filters & Search| Controls[SearchBar & FilterBar]
+    Board -->|Passes filtered tasks| Column[Column]
+    
+    Column -->|Renders| TaskCard[TaskCard]
+    Board -.->|Manages State| TaskForm[TaskForm Modal]
+    
+    Hooks[[Custom Hooks: useLocalStorage, useSeedData]] -.->|Persists Data| Board
+```
+
+---
+
 ## Technical Decisions & Rationale
 
 During the development of this application, several deliberate architectural choices were made to prioritize performance, maintainability, and clean code:
