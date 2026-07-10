@@ -1,0 +1,158 @@
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  background: var(--bg-surface);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 24px 24px 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.titleBlock h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.titleBlock p {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+}
+.closeButton:hover {
+  color: var(--text-main);
+}
+
+.form {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.input, .textarea, .select {
+  padding: 10px 12px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--text-main);
+  transition: all 0.2s;
+  background: var(--bg-surface);
+  font-family: inherit;
+}
+
+.input:focus, .textarea:focus, .select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+
+.inputError {
+  border-color: var(--priority-high-text);
+}
+
+.errorText {
+  color: var(--priority-high-text);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.charCount {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+}
+.row > * {
+  flex: 1;
+}
+
+.footer {
+  padding-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancelBtn {
+  background: transparent;
+  border: none;
+  padding: 10px 16px;
+  font-weight: 500;
+  color: var(--text-main);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancelBtn:hover {
+  background: var(--bg-subtle);
+  border-radius: 6px;
+}
+
+.saveBtn {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.saveBtn:hover {
+  background: var(--color-primary-hover);
+}
