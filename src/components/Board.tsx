@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { Bell, Settings, Calendar, SlidersHorizontal, Plus } from 'lucide-react';
 import { useSeedData } from '../hooks/useSeedData';
 import { Column } from './Column';
 import { TaskForm } from './TaskForm';
@@ -118,11 +119,11 @@ export const Board: React.FC = () => {
         </div>
         <div className={styles.topBarActions}>
           <button className={styles.addButton} onClick={openAddTask}>
-            <span>+</span> Add Task
+            <Plus size={16} /> Add Task
           </button>
           <div className={styles.iconGroup}>
-            <span>🔔</span>
-            <span>⚙️</span>
+            <Bell size={20} />
+            <Settings size={20} />
             <div className={styles.avatar}>👤</div>
           </div>
         </div>
@@ -140,11 +141,11 @@ export const Board: React.FC = () => {
           />
           <div className={styles.filterDivider} />
           <div className={styles.filterAction}>
-            <span>📅</span> Due Date
+            <Calendar size={14} /> Due Date
           </div>
         </div>
         <div className={styles.sortSection}>
-          Sort by: <strong>Recent</strong> <span>☰</span>
+          Sort by: <strong>Recent</strong> <SlidersHorizontal size={14} />
         </div>
       </div>
 

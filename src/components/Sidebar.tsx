@@ -1,11 +1,12 @@
 import React from 'react';
+import { LayoutDashboard, LayoutTemplate, ListTodo, Clock, BarChart2, HelpCircle, LogOut } from 'lucide-react';
 import styles from './Sidebar.module.css';
 
 export const Sidebar: React.FC = () => {
   return (
     <aside className={styles.sidebar}>
       <div className={styles.logo}>
-        <div className={styles.logoIcon}>⊞</div>
+        <div className={styles.logoIcon}><LayoutDashboard size={18} /></div>
         <div className={styles.logoText}>
           <span>Sprint Board</span>
           <span className={styles.logoSubtext}>Product Team</span>
@@ -14,16 +15,16 @@ export const Sidebar: React.FC = () => {
       
       <nav className={styles.nav}>
         <div className={`${styles.navLink} ${styles.active}`}>
-          <span>⊞</span> Board
+          <LayoutTemplate size={18} /> Board
         </div>
         <div className={styles.navLink}>
-          <span>☰</span> Backlog
+          <ListTodo size={18} /> Backlog
         </div>
         <div className={styles.navLink}>
-          <span>◷</span> Timeline
+          <Clock size={18} /> Timeline
         </div>
         <div className={styles.navLink}>
-          <span>📊</span> Reports
+          <BarChart2 size={18} /> Reports
         </div>
       </nav>
 
@@ -35,10 +36,10 @@ export const Sidebar: React.FC = () => {
 
       <div className={styles.bottomLinks}>
         <div className={styles.navLink}>
-          <span>❓</span> Help
+          <HelpCircle size={18} /> Help
         </div>
         <div className={styles.navLink}>
-          <span>🚪</span> Sign Out
+          <LogOut size={18} /> Sign Out
         </div>
       </div>
     </aside>

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { MessageSquare } from 'lucide-react';
 import type { Task, TaskStatus } from '../types';
 import styles from './TaskCard.module.css';
 
@@ -91,7 +92,7 @@ export const TaskCard: React.FC<TaskCardProps> = ({ task, onEdit, onDelete, onMo
         </div>
         {commentCount > 0 && (
           <div className={styles.comments}>
-            <span className={styles.commentIcon}>💬</span>
+            <span className={styles.commentIcon}><MessageSquare size={14} /></span>
             <span>{commentCount}</span>
           </div>
         )}
