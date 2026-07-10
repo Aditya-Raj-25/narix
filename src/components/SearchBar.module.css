@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-subtle);
+  border-radius: 6px;
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.container:focus-within {
+  background-color: var(--bg-surface);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+
+.icon {
+  margin-right: 8px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: var(--text-main);
+  width: 100%;
+  background: transparent;
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+}

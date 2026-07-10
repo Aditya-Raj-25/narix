@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.label {
+  display: none;
+}
+
+.select {
+  padding: 4px 8px 4px 0;
+  border: none;
+  font-size: 13px;
+  color: var(--text-muted);
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.select:hover {
+  color: var(--text-main);
+}
+
+.select:focus {
+  outline: none;
+  color: var(--color-primary);
+}
